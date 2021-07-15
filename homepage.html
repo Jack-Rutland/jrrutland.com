@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Homepage - Jack Rutland</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'>
+    </script>
+</head>
+<body onload="windowPop()">
+    <div id="sidebar">
+        <ul>
+            <li><a href="https://www.linkedin.com/in/jack-rutland/" target="_blank" rel="noopener noreferrer"><img src="icons/linkedin.png"><br><p>LinkedIn</p></a></li><br><br>
+            <li><a href="https://github.com/Jack-Rutland" target="_blank" rel="noopener noreferrer"><img src="icons/github.png"><br><p>Github</p></a></li><br><br>
+            <li><a href="https://twitter.com/jackrrutland" target="_blank" rel="noopener noreferrer"><img src="icons/twitter.png"><br><p>Twitter</p></a></li><br><br>
+            <li><a href="mailto:jackrrutland@gmail.com" target="_blank" rel="noopener noreferrer"><img src="icons/email.png"><br><p>Email</p></a></li>
+            <li><button onclick="windowPop()">TEST</button</li>
+        </ul>
+    </div>
+    <div id="wrapper">
+        <div id="wrapper-header"><b>JRRutland.com</b><p><b>X</b></p></div>
+    <div id="navigation">   
+        <ul>
+            <li><button id="homepage-tab" class="current_tab" onclick="changeTab('homepage')">Homepage</button></li>
+            <li><button id="about-me-tab" onclick="changeTab('about me')">About Me</button></li>
+            <li><button id="projects-tab" onclick="changeTab('projects')">Projects</button></li>
+            <li><button id="contact-me-tab" onclick="changeTab('contact me')">Contact Me</button></li>
+        </ul>
+    </div>
+    <div class="content"  id="tabbed-content">
+        <h1>Hello! My name is Jack Rutland.</h1>
+        <p>I'm a Software Engineer based in New York.</p>
+        <p>My asperations are to make the world a better place through inivative technologies.</p>
+        <br>
+        <p>I am currently a pursuing my B.S. in Computer Science at Rensselaer Polytechnic Institute, and I am looking for work opertunities.</p>
+        <p>To contact me, please refer to the icons on the the left</p>
+        <br>
+        <h2>About this website</h2>
+        <p>This website takes heavy inspiration from the Windows 95 operating system as I believe it is important to reflect on the past to excel in the future</p>
+        <br>
+        <ul>
+            <p>The tabs at the top of this page are used to navigate the site, with each tab containing the following information:</p>
+            <li><b>Homepage</b> - Displays the general information for this site.</li><br>
+            <li><b>About Me</b> - Information about me as well as the technologies I use. Here you can find my resume.</li><br>
+            <li><b>Projects</b> - Descriptions and reflections on projects I have produced, as well as links to the repositories.</li><br>
+            <li><b>Contact Me</b> - Provides Links to my socials and contact info (You can additionally use the sidebar for this!)</li><br>
+        </ul>
+
+    </div>
+    </div>
+</body>
+</html>
