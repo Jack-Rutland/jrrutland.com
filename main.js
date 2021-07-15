@@ -81,7 +81,7 @@ let homepage_html =  `<h1>Hello! My name is Jack Rutland.</h1>
 </ul>`
 
 let about_me_html = `<div class="img-with-text">
-<img src="images/me.bmp">
+<img class="indent profile-picture" src="images/me.bmp">
 <p>Resume<br>Email</p>
 </div>
 <h1>Who am I?</h1>
@@ -110,22 +110,29 @@ The following are the languages and technologies that I am familiar with :
 </ul>
 </div>`
 
-let projects_html = `<h1>Hello! My name is Jack Rutland.</h1>
-<p>I'm a Software Engineer based in New York.</p>
-<p>My asperations are to make the world a better place through inivative technologies.</p>
-<br>
-<p>I am currently a pursuing my B.S. in Computer Science at Rensselaer Polytechnic Institute, and I am looking for work opertunities.</p>
-<p>To contact me, please refer to the icons on the the left</p>
-<br>
-<h2>About this website</h2>
-<p>This website takes heavy inspiration from the Windows 95 operating system as I believe it is important to reflect on the past to excel in the future</p>
-<p>The tabs at the top of this page are used to navigate the site, with each tab containing the following information:</p>
-<ul>
-    <li><b>Homepage</b> - Displays the general information for this site.</li><br>
-    <li><b>About Me</b> - Information about me as well as the technologies I use. Here you can find my resume.</li><br>
-    <li><b>Projects</b> - Descriptions and reflections on projects I have produced, as well as links to the repositories.</li><br>
-    <li><b>Contact Me</b> - Provides Links to my socials and contact info (You can additionally use the sidebar for this!)</li><br>
-</ul>`
+let projects_html = `
+<div class="projects-wrapper">
+    <div class="project indent img-with-text no-float">
+    <a href="https://devpost.com/software/valentinies" target="_blank" rel="noopener noreferrer"><img src="images/project_thumbnails/valentinies.png"></a>
+        <h1>Valentinies</h1>
+        <p>Valentinies was designed to enable children to have the joy of creating Valentine's Day cards
+        in school, virtually!</p>
+    </div>
+    <p></p><p></p>
+    <div class="project indent img-with-text no-float">
+    <a href="https://devpost.com/software/six-feet" target="_blank" rel="noopener noreferrer"><img src="images/project_thumbnails/six_feet.png"></a>
+        <h1>Six Feet</h1>
+        <p>Six feet is a web based contact tracing website that updates in real time using web sockets</p>
+    </div>
+    <p></p><p></p><p></p><p></p>
+    <div class="project indent img-with-text no-float">
+    <a href="https://www.passchat.online" target="_blank" rel="noopener noreferrer"><img src="images/project_thumbnails/passchat.jpeg"></a>
+        <h1>Passchat</h1>
+        <p>Passchat is a SPA(Single-Page Application) chat application with infinite chat rooms. This allows users to interact in real
+        time in a room of their choosing with deleting messages.</p>
+    </div>
+</div>
+`
 
 let contact_me_html = `<h1>Get Connected!</h1>
 <p>I am currently looking for work oppertunities, so feel free to contact me with any questions!</p>

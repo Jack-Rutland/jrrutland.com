@@ -12,8 +12,6 @@ All information on how to contact me is listed on the website.
 
 ## TODO
 * Updated, well written, content
-* Projects page
-    * Projects container class
 * Responsive design for mobile
     * Tab Scaling
     * Image Scaling

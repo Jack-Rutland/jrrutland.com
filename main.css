@@ -1,3 +1,10 @@
+:root {
+    --bg: #00807F;
+    --appbg: #c0c0c0;
+    --white: #ffffff;
+    --black: #000000;
+  }
+
 @font-face { 
     font-family: "windowsnf";
     src: url("w95fa-webfont.woff") format("woff");
@@ -5,10 +12,14 @@
 
     @media screen and (max-width: 1130px) {
         #sidebar {display: none;}
+        .projects-wrapper {
+            grid-template-columns: 1fr !important;
+            grid-template-rows: 400px 100px 0px 400px 100px 0px 0px 0px 400px !important;
+        }
     }
 
 body {
-    background: #00807F;
+    background: var(--bg);
 }
 
 #navigation {
@@ -35,12 +46,12 @@ body {
 
 #navigation ul li button{
     text-decoration: none;
-    color: #000000;
-    background: #c0c0c0;
-    border-left: 2px solid #ffffff;
-    border-top: 2px solid #ffffff;
-    border-bottom: 2px solid #ffffff;
-    border-right: 2px solid #000000;
+    color: var(--black);
+    background: var(--appbg);
+    border-left: 2px solid var(--white);
+    border-top: 2px solid var(--white);
+    border-bottom: 2px solid var(--white);
+    border-right: 2px solid var(--black);
     border-top-right-radius: 4px;
     border-top-left-radius: 4px;
     display: block;
@@ -53,27 +64,27 @@ body {
 }
 
 #navigation ul li button.current_tab{
-    background: #c0c0c0;
-    color: #000000;
-    border-bottom: 2px solid #c0c0c0;
+    background: var(--appbg);
+    color: var(--black);
+    border-bottom: 2px solid var(--appbg);
     z-index: 2;
     position: relative;
 }
 
 #navigation ul li a:hover{
-    text-decoration: #ffffff underline;
+    text-decoration: var(--white) underline;
 }
 
 .content {
-    border-left: 2px solid #ffffff;
-    border-bottom: 2px solid #000000;
-    border-right: 2px solid #000000;
-    background: #c0c0c0;
+    border-left: 2px solid var(--white);
+    border-bottom: 2px solid var(--black);
+    border-right: 2px solid var(--black);
+    background: var(--appbg);
     width: 80%;
     display: block;
     float: right;
     margin-right: 10%;
-    border-top: 2px solid #ffffff;
+    border-top: 2px solid var(--white);
     margin-top: -2px;
     z-index: 1;
     font-family: windowsnf, sans-serif;
@@ -97,15 +108,20 @@ body {
     height: 100%;
 }
 
-.img-with-text img {
+.profile-picture {
+    width: 70%;
+    margin-left: 15%;
+}
+
+.indent {
     display: block;
     margin-right: 5%;
     margin-top: 5%;
     margin-bottom: 5%;
-    border-right: 3px solid #ffffff;
-    border-top: 3px solid #000000;
-    border-left: 3px solid #000000;
-    border-bottom: 3px solid #ffffff;
+    border-right: 3px solid var(--white);
+    border-top: 3px solid var(--black);
+    border-left: 3px solid var(--black);
+    border-bottom: 3px solid var(--white);
 }
 
 #sidebar {
@@ -131,7 +147,7 @@ body {
 
 #sidebar ul li a{
     text-decoration: none;
-    color: #ffffff;
+    color: var(--white);
     font-family: windowsnf, sans-serif;
 }
 
@@ -140,11 +156,11 @@ body {
 }
 
 #wrapper {
-    border-left: 2px solid #ffffff;
-    border-bottom: 2px solid #000000;
-    border-right: 2px solid #000000;
-    background: #c0c0c0;
-    border-top: 2px solid #ffffff;
+    border-left: 2px solid var(--white);
+    border-bottom: 2px solid var(--black);
+    border-right: 2px solid var(--black);
+    background: var(--appbg);
+    border-top: 2px solid var(--white);
     width: 80%;
     float: right;
     margin-right: 10%;
@@ -154,7 +170,7 @@ body {
 }
 
 #wrapper-header {
-    color : #ffffff;
+    color : var(--white);
     background: #000080;
     padding : 5px;
     font-size: large;
@@ -166,11 +182,11 @@ body {
 
 #wrapper-header p{
     display: inline;
-    border-left: 2px solid #ffffff;
-    border-bottom: 2px solid #000000;
-    border-right: 2px solid #000000;
-    background: #c0c0c0;
-    border-top: 2px solid #ffffff;
+    border-left: 2px solid var(--white);
+    border-bottom: 2px solid var(--black);
+    border-right: 2px solid var(--black);
+    background: var(--appbg);
+    border-top: 2px solid var(--white);
     float: right;
     width: 20px;
     height: 20px;
@@ -178,4 +194,27 @@ body {
     padding: 0;
     color: black;
     margin: 0;
+}
+
+.projects-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 0fr 0fr 1fr;
+    grid-template-rows: 400px 100px 400px;
+    overflow-y: scroll;
+    height: 1000px;
+}
+.project {
+    padding: 10px;
+    background-color: #ffffda;
+    
+}
+
+.project img {
+    width: 75%;
+    height: 200px;
+    
+}
+
+.no-float {
+    float: none;
 }
