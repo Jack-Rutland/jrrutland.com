@@ -80,7 +80,9 @@ let homepage_html =  `<h1>Hello! My name is Jack Rutland.</h1>
    <li><b>Contact Me</b> - Provides Links to my socials and contact info (You can additionally use the sidebar for this!)</li><br>
 </ul>`
 
-let about_me_html = `<h1>Who am I?</h1>
+let about_me_html = `<div class="img-with-text">
+<img src="images/me.bmp">
+<p>Resume<br>Email</p></div><h1>Who am I?</h1>
 <p>My name is Jack Rutland and I am currently pursuing my Bachelors of Science in Computer Science
 at Rensselaer Polytechnic Institute in Troy, New York
 </p>

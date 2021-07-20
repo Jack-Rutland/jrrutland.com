@@ -12,6 +12,7 @@
 
     @media screen and (max-width: 1130px) {
         #sidebar {display: none;}
+        .footer {display: grid !important;}
         .projects-wrapper {
             grid-template-columns: 1fr !important;
             grid-template-rows: 400px 100px 0px 400px 100px 0px 0px 0px 400px !important;
@@ -217,4 +218,34 @@ body {
 
 .no-float {
     float: none;
+}
+
+.footer {
+    display: none;
+    text-align: center;
+    width: 50%;
+    margin-left: 0%;
+    padding-left: 25%;
+    padding-top: 40px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    list-style: none;
+}
+
+
+
+.footer li{
+    height: 100%;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10%;
+}
+
+.footer li a{
+    text-decoration: none;
+    color: var(--white);
+    font-family: windowsnf, sans-serif;
+}
+
+.footer li a:hover{
+    text-decoration: underline;
 }
