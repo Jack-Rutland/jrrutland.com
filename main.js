@@ -64,51 +64,61 @@ let wrapper_head = `<div id="wrapper-header"><b>JRRutland.com</b><p><b>x</b></p>
 // TABBED PANAL HTML
 let homepage_html =  `<h1>Hello! My name is Jack Rutland.</h1>
 <p>I'm a Software Engineer based in New York.</p>
-<p>My asperations are to make the world a better place through inivative technologies.</p>
+<p>My aspirations are to make the world a better place through innovative technologies.</p>
 <br>
-<p>I am currently a pursuing my B.S. in Computer Science at Rensselaer Polytechnic Institute, and I am looking for work opertunities.</p>
+<p>I am currently pursuing my B.S. in Computer Science at Rensselaer Polytechnic Institute, and I am looking for work opportunities.</p>
 <p>To contact me, please refer to the icons on the the left</p>
 <br>
 <h2>About this website</h2>
 <p>This website takes heavy inspiration from the Windows 95 operating system as I believe it is important to reflect on the past to excel in the future</p>
 <br>
 <ul>
-    <p>The tabs at the top of this page are used to navigate the site, with each tab containing the following information:</p>
-    <li><b>Homepage</b> - Displays the general information for this site.</li><br>
-    <li><b>About Me</b> - Information about me as well as the technologies I use. Here you can find my resume.</li><br>
-    <li><b>Projects</b> - Descriptions and reflections on projects I have produced, as well as links to the repositories.</li><br>
-    <li><b>Contact Me</b> - Provides Links to my socials and contact info (You can additionally use the sidebar for this!)</li><br>
+   <p>The tabs at the top of this page are used to navigate the site, with each tab containing the following information:</p>
+   <li><b>Homepage</b> - Displays the general information for this site.</li><br>
+   <li><b>About Me</b> - Information about me as well as the technologies I use. Here you can find my resume.</li><br>
+   <li><b>Projects</b> - Descriptions and reflections on projects I have produced, as well as links to the repositories.</li><br>
+   <li><b>Contact Me</b> - Provides Links to my socials and contact info (You can additionally use the sidebar for this!)</li><br>
 </ul>`
 
-let about_me_html = `<div class="img-with-text">
-<img class="indent profile-picture" src="images/me.bmp">
-<p>Resume<br>Email</p>
-</div>
-<h1>Who am I?</h1>
+let about_me_html = `<h1>Who am I?</h1>
 <p>My name is Jack Rutland and I am currently pursuing my Bachelors of Science in Computer Science
-at Rensselaer Polytechnic Institute in New York
+at Rensselaer Polytechnic Institute in Troy, New York
 </p>
 <p>
-Ever since I was little, I've been interested in puzzles. In fact, my preschool teachers
-used to tell my parents that I frequented the "timeout table", not because I had been
-troublesome, but because that's where all the puzzles were kept.
+I know my way around JavaScript and I have an ever growing knowledge of web frameworks such as Next.js, and libraries such as React.<br>
+I also have knowledge of Python, C++, and C from school and outside learning / projects.
 </p>
+<h3>How I became who I am</h3>
 <p>
-I started programming when I was 11, learning basic html and css online and running my Unity games at low frame rates on my family computer.
-After that, I kept adding various tools to my toolbelt, which has led me to where I am today.
+I’ve had an interest in computers ever since my family got an old Dell computer and placed it in the study. I would spend all the time I was allowed on it playing games I borrowed from the library and clicking on icons and buttons to see what they would do.<br> <br>
+ 
+Once I had exhausted all the games available at the library, I moved on to a little game called Minecraft. Minecraft enabled me to unknowingly construct complex logic gates and program using redstone and command blocks respectively. The functionality of these were quite limiting, so I moved on to creating 2D and 3D shooters in unity and eventually picking up the hottest programming language at the time, Python. <br> <br>
+ 
+I initially used Python to help me in school. It allowed me to create calculators for equations that took a long time to write by hand, as well as generate realistic looking data if I missed a lab in class. From there I began developing discord bots for servers with my friends and little 2D games with pygame. At that point I thought I knew that that was what I wanted to do, be a Python developer.<br> <br>
+ 
+The honeymoon phase with Python eventually came to an end when I hit college and entered a hackathon with a couple of buddies. We decided that we were going to build a website for our project, which meant I had to dip my toes in the water that is JavaScript. <br> <br>
+ 
+After completing that project and seeing how powerful JavaScript was, I had a desire to keep pursuing web development; And that’s exactly what I did
+ 
+ 
 </p>
 <p>
 The following are the languages and technologies that I am familiar with :
 </p>
 <ul>
-<li>C++</li>
+<li>JavaScript</li>
+<li>HTML/CSS</li>
+<li>React</li>
+<li>Node</li>
+<li>C/C++</li>
 <li>Python</li>
-<li>Java</li>
-<li>CSS</li>
-<li>HMTL</li>
 <li>Git</li>
 </ul>
-</div>`
+</div>
+ 
+
+
+`
 
 let projects_html = `
 <div class="projects-wrapper">
