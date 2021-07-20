@@ -82,7 +82,7 @@ let homepage_html =  `<h1>Hello! My name is Jack Rutland.</h1>
 
 let about_me_html = `<div class="img-with-text">
 <img src="images/me.bmp">
-<p>Resume<br>Email</p></div><h1>Who am I?</h1>
+<p><a href="Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a><br><a href="mailto:jackrrutland@gmail.com" target="_blank" rel="noopener noreferrer">Email</a></p></div><h1>Who am I?</h1>
 <p>My name is Jack Rutland and I am currently pursuing my Bachelors of Science in Computer Science
 at Rensselaer Polytechnic Institute in Troy, New York
 </p>
