@@ -67,7 +67,7 @@ body {
 #navigation ul li button.current_tab{
     background: var(--appbg);
     color: var(--black);
-    border-bottom: 2px solid var(--appbg);
+    border-bottom: 4px solid var(--appbg);
     z-index: 2;
     position: relative;
 }
